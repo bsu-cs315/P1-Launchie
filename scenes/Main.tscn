@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/items/Cannon.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/TileMap.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/HUD.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/Main.gd" type="Script" id=4]
+[ext_resource path="res://scenes/entities/Target.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/wheel.png" type="Texture" id=6]
+
+[node name="Main" type="Node"]
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 383.006 ],
+"_edit_vertical_guides_": [ -41.73, -107.246 ]
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 720.0
+margin_bottom = 480.0
+color = Color( 0.454902, 0.301961, 0.301961, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TileMap" parent="." instance=ExtResource( 2 )]
+tile_data = PoolIntArray( 393216, 1, 0, 393218, 1, 0, 393220, 1, 0, 393222, 1, 0, 393224, 1, 0, 393226, 1, 0 )
+
+[node name="HUD" parent="." instance=ExtResource( 3 )]
+
+[node name="Cannon" parent="." instance=ExtResource( 1 )]
+position = Vector2( 85.2582, 324.913 )
+
+[node name="Target" parent="." instance=ExtResource( 5 )]
+position = Vector2( 635.322, 313.754 )
+contacts_reported = 1
+contact_monitor = true
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 136.645, 275.393 )
+scale = Vector2( 7.96366, 7.96366 )
+z_index = 2
+texture = ExtResource( 6 )
+[connection signal="start_game" from="HUD" to="." method="_on_HUD_start_game"]
+[connection signal="launch" from="Cannon" to="." method="_on_Cannon_launch"]
+[connection signal="body_entered" from="Target" to="." method="_on_Target_body_entered"]

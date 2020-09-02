@@ -1,0 +1,18 @@
+extends RigidBody2D
+
+signal projectile_launched
+
+export (int) var launch_speed = 200
+
+var needs_rotated = 0
+
+func _ready():
+	pass
+	
+func launch(angle):
+		rotation = angle
+		angular_velocity = 0
+		apply_impulse(Vector2(), Vector2(abs(cos(angle)) * launch_speed, abs(sin(angle)) * launch_speed * -1))
+		emit_signal("projectile_launched")
+
+

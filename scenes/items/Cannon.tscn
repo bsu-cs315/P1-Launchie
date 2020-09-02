@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/cannon.png" type="Texture" id=1]
+[ext_resource path="res://scenes/items/Cannon.gd" type="Script" id=2]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 24.0
+height = 0.892399
+
+[node name="Cannon" type="KinematicBody2D"]
+position = Vector2( 144, 304 )
+z_index = 1
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -45.9806, -32.7627 )
+scale = Vector2( 5.53291, 5.53291 )
+frames = SubResource( 1 )
+offset = Vector2( 11.107, 5.23199 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource( 2 )
+disabled = true
