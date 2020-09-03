@@ -2,15 +2,18 @@ extends CanvasLayer
 
 signal start_game
 
+func set_strength(value):
+	$StrengthBar.value = value
+
 func show_game_over():
-	$Button.show()
+	$StartButton.show()
 	
 func show_game_win():
-	$Label.show()
+	$WinLabel.show()
 
 func _on_Button_pressed():
-	$Button.hide()
-	$Label.hide()
+	$StartButton.hide()
+	$WinLabel.hide()
 	emit_signal("start_game")
 
 

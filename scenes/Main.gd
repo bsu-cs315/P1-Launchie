@@ -26,3 +26,7 @@ func _on_Cannon_launch():
 func _on_Target_body_entered(body):
 	if body.name == "Projectile":
 		$HUD.show_game_win() # Replace with function body.
+
+
+func _on_Cannon_change_strength(value):
+	$HUD.set_strength(value) # Replace with function body.

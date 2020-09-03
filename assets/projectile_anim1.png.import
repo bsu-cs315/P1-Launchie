@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wheel.png-b48455c42a7be6c2920727e7cf23792d.stex"
+path="res://.import/projectile_anim1.png-5f9bbdf1562a24aab14766d38270aeab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/wheel.png"
-dest_files=[ "res://.import/wheel.png-b48455c42a7be6c2920727e7cf23792d.stex" ]
+source_file="res://assets/projectile_anim1.png"
+dest_files=[ "res://.import/projectile_anim1.png-5f9bbdf1562a24aab14766d38270aeab.stex" ]
 
 [params]
 

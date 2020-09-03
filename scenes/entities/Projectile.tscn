@@ -1,17 +1,19 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scenes/entities/Projectile.gd" type="Script" id=1]
-[ext_resource path="res://assets/mr_projectile.png" type="Texture" id=2]
+[ext_resource path="res://assets/projectile_anim1.png" type="Texture" id=2]
+[ext_resource path="res://assets/projectile_anim2.png" type="Texture" id=3]
+[ext_resource path="res://assets/projectile_anim3.png" type="Texture" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16.2423, 26.6839 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 2 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "default",
-"speed": 5.0
+"speed": 10.0
 } ]
 
 [node name="Projectile" type="RigidBody2D" groups=[
@@ -22,7 +24,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
-launch_speed = 300
+launch_speed = 900
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -15.3576, -8.6153 )
