@@ -9,7 +9,6 @@ var rotation_dir = 0
 var triggered = false
 var strength = 0
 
-
 func _ready():
 	pass # Replace with function body.
 
