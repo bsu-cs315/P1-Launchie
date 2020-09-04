@@ -1,6 +1,6 @@
 # P1-Launchie
 
-A 2D Physics-Based Game made with Godot.
+A 2D Physics-Based Game made with Godot by Kade D.
 
 ## Project Report
 
