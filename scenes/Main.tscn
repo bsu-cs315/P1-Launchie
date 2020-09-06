@@ -42,8 +42,8 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 1024.0
-margin_bottom = 600.0
+margin_right = 910.0
+margin_bottom = 512.0
 color = Color( 0.454902, 0.301961, 0.301961, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -52,10 +52,10 @@ __meta__ = {
 [node name="HUD" parent="." instance=ExtResource( 3 )]
 
 [node name="Cannon" parent="." instance=ExtResource( 1 )]
-position = Vector2( 92.3934, 448.59 )
+position = Vector2( 90.015, 384.373 )
 
 [node name="Target" parent="." instance=ExtResource( 5 )]
-position = Vector2( 926.678, 443.377 )
+position = Vector2( 856.515, 377.971 )
 contacts_reported = 1
 contact_monitor = true
 
@@ -69,7 +69,7 @@ texture = SubResource( 1 )
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 3 )
 format = 1
-tile_data = PoolIntArray( 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0 )
+tile_data = PoolIntArray( 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458761, 0, 0, 458762, 0, 0, 458763, 0, 0, 458764, 0, 0, 458765, 0, 0, 458766, 0, 0 )
 [connection signal="start_game" from="HUD" to="." method="_on_HUD_start_game"]
 [connection signal="change_strength" from="Cannon" to="." method="_on_Cannon_change_strength"]
 [connection signal="launch" from="Cannon" to="." method="_on_Cannon_launch"]

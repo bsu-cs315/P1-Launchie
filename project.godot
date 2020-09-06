@@ -21,7 +21,10 @@ config/icon="res://assets/icon.png"
 
 [display]
 
-window/size/resizable=false
+window/size/width=910
+window/size/height=512
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
 
 [rendering]
 
