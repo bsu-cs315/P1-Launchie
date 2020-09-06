@@ -1,6 +1,8 @@
-# P1-Launchie
+# P1-Launchie 
 
 A 2D Physics-Based Game made with Godot by Kade D.
+
+<a href="https://bsu-cs315.github.io/P1-Launchie/">Github Pages Link (Play)</a>
 
 ## Project Report
 
