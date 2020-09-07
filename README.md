@@ -31,3 +31,5 @@ Creating the physics-based game in Godot was a great learning experience. The bi
 - [X] A-1: The player can modify the strength of the projectile's firing.
 - [X] A-2: There is a visual indicator showing the angle at which the projectile will fire.
 - [X] A-3: The projectile's hitting the target is recognized and logged to the console or otherwise indicated.
+
+This work has earned the grade of A.
