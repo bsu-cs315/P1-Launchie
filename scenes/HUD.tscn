@@ -1,8 +1,40 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/HUD.gd" type="Script" id=1]
-[ext_resource path="res://assets/arrow.png" type="Texture" id=2]
-[ext_resource path="res://assets/spacebar.png" type="Texture" id=3]
+[ext_resource path="res://assets/visual/assets_tiled.png" type="Texture" id=2]
+[ext_resource path="res://assets/visual/spacebar.png" type="Texture" id=3]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 64, 64, 64 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ SubResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 64, 64, 64 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource( 1 )
@@ -22,17 +54,26 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="WinLabel" type="Label" parent="."]
-visible = false
+[node name="ScoreLabel" type="Label" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -30.0
+margin_left = -5.0
 margin_top = -7.0
-margin_right = 30.0
+margin_right = 5.0
 margin_bottom = 7.0
-text = "YOU WIN"
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InventoryLabel" type="Label" parent="."]
+margin_left = 29.8811
+margin_top = 318.411
+margin_right = 180.881
+margin_bottom = 332.411
+text = "3 Projectiles Remaining"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -48,16 +89,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="RightArrow" type="Sprite" parent="."]
-position = Vector2( 192, 458 )
-texture = ExtResource( 2 )
+[node name="RightArrow" type="AnimatedSprite" parent="."]
+position = Vector2( 192, 456 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 2 )
 
-[node name="LeftArrow" type="Sprite" parent="."]
-position = Vector2( 31.4583, 457.766 )
+[node name="LeftArrow" type="AnimatedSprite" parent="."]
+position = Vector2( 32, 456 )
 rotation = 3.14159
-texture = ExtResource( 2 )
+scale = Vector2( 0.511655, 0.511655 )
+frames = SubResource( 4 )
 
-[node name="SpaceBar" type="Sprite" parent="."]
-position = Vector2( 112, 457 )
-texture = ExtResource( 3 )
+[node name="SpaceBar" type="AnimatedSprite" parent="."]
+position = Vector2( 112, 456 )
+frames = SubResource( 5 )
 [connection signal="pressed" from="StartButton" to="." method="_on_Button_pressed"]

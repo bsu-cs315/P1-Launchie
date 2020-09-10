@@ -16,5 +16,7 @@ func launch(angle, strength):
 		apply_impulse(Vector2(), Vector2(abs(cos(angle)) * launch_speed * strength, abs(sin(angle)) * launch_speed * strength * -1))
 		emit_signal("projectile_launched")
 		$AnimatedSprite.play()
+		$AudioStreamPlayer.play()
+		
 
 

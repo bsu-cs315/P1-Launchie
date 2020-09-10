@@ -13,8 +13,11 @@ func hide_tutorial():
 	$LeftArrow.hide()
 	$SpaceBar.hide()
 	
-func show_game_win():
-	$WinLabel.show()
+func set_projectile_remaining(count):
+	$InventoryLabel.text = str(count) + " Projectiles Remaining"
+	
+func increase_score():
+	$ScoreLabel.text = str(int($ScoreLabel.text) + 50)
 
 func _on_Button_pressed():
 	emit_signal("start_game")

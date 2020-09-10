@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/projectile_anim3.png-d934750833e05c1d15d1338823456818.stex"
+path="res://.import/assets_tiled.png-472a90f7222088431489af8a09ea19d5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/projectile_anim3.png"
-dest_files=[ "res://.import/projectile_anim3.png-d934750833e05c1d15d1338823456818.stex" ]
+source_file="res://assets/visual/assets_tiled.png"
+dest_files=[ "res://.import/assets_tiled.png-472a90f7222088431489af8a09ea19d5.stex" ]
 
 [params]
 

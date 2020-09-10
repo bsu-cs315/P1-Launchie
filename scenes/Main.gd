@@ -5,15 +5,19 @@ func _on_HUD_start_game():
 	var _reloaded = get_tree().reload_current_scene()
 
 
-func _on_Cannon_launch():
-	$HUD.show_game_over()
-	$HUD.hide_tutorial()
-
-
 func _on_Target_body_entered(body):
-	if body.name == "Projectile":
-		$HUD.show_game_win()
+	if "Projectile" in body.name:
+		$HUD.increase_score()
 
 
 func _on_Cannon_change_strength(value):
 	$HUD.set_strength(value)
+
+
+func _on_Cannon_empty():
+	$HUD.show_game_over()
+	$HUD.hide_tutorial()
+
+
+func _on_Cannon_change_inventory(count):
+	$HUD.set_projectile_remaining(count)
