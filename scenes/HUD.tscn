@@ -54,6 +54,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Label" type="Label" parent="."]
+margin_left = 400.0
+margin_top = 249.0
+margin_right = 440.0
+margin_bottom = 263.0
+text = "Score:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="ScoreLabel" type="Label" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
@@ -64,6 +74,16 @@ margin_top = -7.0
 margin_right = 5.0
 margin_bottom = 7.0
 text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InstructionLabel" type="Label" parent="."]
+margin_left = 744.0
+margin_top = 272.0
+margin_right = 889.0
+margin_bottom = 286.0
+text = "Hit the target to score!"
 __meta__ = {
 "_edit_use_anchors_": false
 }

@@ -22,7 +22,7 @@ var direction = 1
 func _physics_process(delta):
 	rotation += rotate_on_input(delta)
 	rotation_degrees = clamp(rotation_degrees, -90, 0)
-	if are_projectiles_sleeping() && projectiles_remaining != 0 && Input.is_action_pressed("ui_accept"):
+	if Input.is_action_pressed("ui_accept") && are_projectiles_sleeping() && projectiles_remaining != 0:
 		time_held += delta
 		strength += time_held * strength_speed * direction
 		if strength >= 100 || strength <= 0:
@@ -30,7 +30,7 @@ func _physics_process(delta):
 			time_held = 0
 		strength = clamp(strength, 0, 100)
 		emit_signal("change_strength", strength)
-	if are_projectiles_sleeping() && projectiles_remaining != 0 && Input.is_action_just_released("ui_accept"):
+	if projectiles_remaining != 0 && Input.is_action_just_released("ui_accept") && are_projectiles_sleeping():
 		var projectile = projectile_packed.instance()
 		get_tree().get_root().add_child(projectile)
 		projectile.position = position
@@ -49,11 +49,11 @@ func rotate_on_input(delta):
 	if Input.is_action_pressed("ui_left"):
 		rotation_dir -= 1
 	return rotation_dir * rotation_speed * delta
-	
+
 func are_projectiles_sleeping():
 	var sleeping = true
 	for node in get_tree().get_nodes_in_group("Projectiles"):
 		node = node as RigidBody2D
-		if !node.sleeping:
+		if !node.sleeping && node.position.x < get_viewport().size.x:
 			sleeping = false
 	return sleeping
