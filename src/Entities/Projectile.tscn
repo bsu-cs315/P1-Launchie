@@ -1,19 +1,19 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://scenes/entities/Projectile.gd" type="Script" id=1]
-[ext_resource path="res://assets/visual/assets_tiled.png" type="Texture" id=2]
-[ext_resource path="res://assets/audio/zoom.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/visual/assets_tiled.png" type="Texture" id=1]
+[ext_resource path="res://assets/audio/zoom.wav" type="AudioStream" id=2]
+[ext_resource path="res://src/entities/Projectile.gd" type="Script" id=3]
 
 [sub_resource type="AtlasTexture" id=1]
-atlas = ExtResource( 2 )
+atlas = ExtResource( 1 )
 region = Rect2( 128, 0, 64, 64 )
 
 [sub_resource type="AtlasTexture" id=2]
-atlas = ExtResource( 2 )
+atlas = ExtResource( 1 )
 region = Rect2( 192, 0, 64, 64 )
 
 [sub_resource type="AtlasTexture" id=3]
-atlas = ExtResource( 2 )
+atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 64, 64 )
 
 [sub_resource type="SpriteFrames" id=4]
@@ -31,7 +31,7 @@ extents = Vector2( 16.2423, 26.6839 )
 "Projectiles",
 ]]
 position = Vector2( 123.224, 344.609 )
-script = ExtResource( 1 )
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -42,6 +42,7 @@ position = Vector2( -11.2242, -8.60901 )
 rotation = 1.5708
 scale = Vector2( 1.02926, 1.02926 )
 frames = SubResource( 4 )
+playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -15.3576, -8.6153 )
@@ -49,5 +50,5 @@ rotation = 1.5708
 shape = SubResource( 5 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 3 )
-volume_db = -5.6
+stream = ExtResource( 2 )
+volume_db = -28.8

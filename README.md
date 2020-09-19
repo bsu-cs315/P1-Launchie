@@ -6,6 +6,8 @@ A 2D Physics-Based Game made with Godot by Kade D.
 
 ## Project Report
 
+
+
 ### Reflection
 
 It was very satisfying to work on the second iteration of this project. I was able to dedicate more time to improving things outside of core gameplay. I had to make some decisions on how to implement certain mechanics such as deciding when a projectile should be considered to be done firing. Once again, I created the assets needed for this iteration's requirements. The most notable thing I learned about Godot is how nice it is to have the embedded documentation feature for objects, which was extremely useful for examining properties in this iteration.
