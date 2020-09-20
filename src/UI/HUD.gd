@@ -3,7 +3,7 @@ extends CanvasLayer
 var score: int = 0
 
 
-func _process(delta):
+func _process(_delta):
 	$SpaceBar.modulate.a = 1
 	$RightArrow.modulate.a = 1
 	$LeftArrow.modulate.a = 1

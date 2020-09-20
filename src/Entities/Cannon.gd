@@ -12,7 +12,7 @@ var direction_rotation: int = 0
 var direction_strength: int = 1
 
 onready var projectiles_remaining := 3
-onready var projectile_packed: PackedScene = load("res://src/Entities/Projectile.tscn")
+onready var projectile_packed: PackedScene = preload("res://src/Entities/Projectile.tscn")
 
 
 func _physics_process(delta):
