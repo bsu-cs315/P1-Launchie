@@ -21,14 +21,14 @@ Working on the third iteration of this project felt as if I was giving the game 
 - [X] C-3: You have a clear legal right to use all incorporated assets, and the licenses for all third-party assets are tracked in the <code>README.md</code> file.
 - [X] C-4: The <code>README.md</code> contains instructions for how to play the game or such instructions are incorporated into the game itself.
 - [X] C-5: The project content is eligible for an <a href="https://www.esrb.org/ratings-guide/">ESRB Rating</a> of T or less.
-- [X] C-6: The projectile and targets are shown with 2D graphics.
-- [X] C-7: The game plays an appropriate sound effect when the projectile is fired.
+- [X] C-6: The game starts on a title screen. Interacting with the title screen moves the player into the gameplay screen.
 - [X] B-1: The <code>README.md</code> file contains a personal reflection on the iteration and self-evaluation, as defined above.
-- [X] B-2: The playable game is published to GitHub Pages and linked from the <code>README.md</code> file.
+- [ ] B-2: The playable game is published to GitHub Pages and linked from the <code>README.md</code> file.
 - [X] B-3: Earn one star.
 - [X] A-1: Earn three stars.
-- [X] ⭐ The player has a small inventory of projectiles, and only one can be launched at a time.
-- [X] ⭐ The background and ground use 2D graphics.
-- [X] ⭐ A <abbr title="Heads-Up Display">HUD</abbr> shows the current game state such as the score and number of projectiles remaining.
+- [X] ⭐ When the game is over, the player can interact to take the game back to the title screen, from which the game can be played again.
+- [X] ⭐ Use an <code>AnimationPlayer</code> or <code>Tween</code> to add some pop to the user-interface.
+- [X] ⭐ The source code complies with our adopted style guide.
 
-According to the requirements above, this work has earned the grade of A.
+
+According to the requirements above, this work has earned the grade of C.
