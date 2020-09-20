@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://src/entities/Cannon.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/Entities/Cannon.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/visual/grass.png" type="Texture" id=2]
-[ext_resource path="res://src/ui/HUD.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/UI/HUD.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Main.gd" type="Script" id=4]
-[ext_resource path="res://src/entities/Target.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/Entities/Target.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/visual/assets_tiled.png" type="Texture" id=6]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
