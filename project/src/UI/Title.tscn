@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://src/ui/Title.gd" type="Script" id=1]
+[ext_resource path="res://src/UI/Title.gd" type="Script" id=1]
 [ext_resource path="res://assets/visual/title.png" type="Texture" id=2]
 [ext_resource path="res://assets/visual/assets_tiled.png" type="Texture" id=3]
 
