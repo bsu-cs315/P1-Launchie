@@ -7,7 +7,7 @@ on: push
 
 env:
   GODOT_VERSION: 3.2.3
-  EXPORT_NAME: P1-Launchie
+  EXPORT_NAME: test-project
 
 jobs:
 
