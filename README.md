@@ -10,7 +10,7 @@ A 2D Physics-Based Game made with Godot by Kade D.
 
 ### Reflection
 
-Working on the third iteration of this project felt as if I was giving the game what it deserved. Finally, Launchie had a proper title screen and a more fitting game loop. I spent much of my time this iteration reading through the GDQuest conventions to identify potential pitfalls of the code I had previously written and there were many. If I had started out writing better code, implementing what I had learned from the docs would have saved a lot of time and headache. Overall, this iteration for me was focused on cleaning up and reflecting over the last two iterations.
+Working on the third iteration of this project felt as if I was giving the game what it deserved. Finally, Launchie had a proper title screen and a more fitting game loop. I spent much of my time this iteration reading through the GDQuest conventions to identify potential pitfalls of the code I had previously written and there were many. If I had started out writing better code, implementing what I had learned from the docs would have saved a lot of time and headache. Overall, this iteration for me was focused on cleaning up and reflecting over the last two iterations. Note: exporting to html5 was really finicky for me this time around.
 
 ### Self-Evaluation
 - [X] D-1: The repository link is submitted to Canvas before the project deadline.
