@@ -2,7 +2,7 @@
 
 A 2D Physics-Based Game made with Godot by Kade D.
 
-<a href="https://bsu-cs315.github.io/P1-Launchie/">Github Pages Link (Play)</a>
+<a href="https://project-1-61849.web.app/">Launchie (Play)</a>
 
 ## Project Report
 
@@ -23,7 +23,7 @@ Working on the third iteration of this project felt as if I was giving the game 
 - [X] C-5: The project content is eligible for an <a href="https://www.esrb.org/ratings-guide/">ESRB Rating</a> of T or less.
 - [X] C-6: The game starts on a title screen. Interacting with the title screen moves the player into the gameplay screen.
 - [X] B-1: The <code>README.md</code> file contains a personal reflection on the iteration and self-evaluation, as defined above.
-- [ ] B-2: The playable game is published to GitHub Pages and linked from the <code>README.md</code> file.
+- [X] B-2: The playable game is published to GitHub Pages and linked from the <code>README.md</code> file.
 - [X] B-3: Earn one star.
 - [X] A-1: Earn three stars.
 - [X] ⭐ When the game is over, the player can interact to take the game back to the title screen, from which the game can be played again.
@@ -31,4 +31,4 @@ Working on the third iteration of this project felt as if I was giving the game 
 - [X] ⭐ The source code complies with our adopted style guide.
 
 
-According to the requirements above, this work has earned the grade of C.
+According to the requirements above, this work has earned the grade of A.
