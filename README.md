@@ -2,7 +2,7 @@
 
 A 2D Physics-Based Game made with Godot by Kade D.
 
-<a href="https://project-1-61849.web.app/">Launchie (Play)</a>
+<a href="https://bsu-cs315.github.io/P1-Launchie/">Github Pages Link</a>
 
 ## Project Report
 
